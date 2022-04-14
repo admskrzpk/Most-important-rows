@@ -1,4 +1,3 @@
-
 object MostImportantRows extends App {
 
   import org.apache.spark.sql.SparkSession
