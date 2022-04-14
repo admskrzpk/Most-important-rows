@@ -25,5 +25,9 @@ object MostImportantRows extends App {
     ("MV2", 2))
     .toDF("value", "priority")
 
-  val output = input.join(priorities, "value").sort("id", "priority").dropDuplicates("id").show()
+  val output = input
+  .join(priorities, "value")
+  .sort("id", "priority")
+  .dropDuplicates("id")
+  .show()
 }
